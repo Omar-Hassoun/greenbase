@@ -1,0 +1,240 @@
+/*
+Project Name: Greenbase Front End Developer Technical Question (Application)
+Author: Omar Hassoun
+Date: 7 Feb, 2024
+
+Description:
+This CSS file contains the styles for the standalone design as part of the technical assessment for the Front End Developer position at Greenbase.
+
+Additional Information:
+The application is based on a design provided via Figma.
+*/
+
+
+/*General style
+***********************/
+body {
+  font-family: "Inter";
+  background-color: #f5f5fa;
+}
+body > * {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+div.container {
+  width: 1440px;
+  margin: auto;
+}
+/*Header Style
+*****************/
+header {
+  height: 68px;
+}
+header div#header-wrapper {
+  padding: 10px 5px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  box-shadow: 0px 1px 4px 0px #15223214;
+}
+header div#header-wrapper div.logo {
+  flex-grow: 1;
+}
+
+header div#header-wrapper div.logo a {
+  display: inline-block;
+  vertical-align: middle;
+}
+header div#header-wrapper div.logo a img {
+  vertical-align: middle;
+}
+header div#header-wrapper div.logo a span {
+  vertical-align: middle;
+  font-weight: bold;
+  color: #000;
+  font-size: 1.1rem;
+}
+header div#header-wrapper div.search-wrapper {
+  position: relative;
+  flex-grow: 3;
+}
+header div#header-wrapper div.search-wrapper img {
+  position: absolute;
+  top: 8px;
+  left: 3px;
+}
+header div#header-wrapper div.search-wrapper input#search {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 30px;
+  border: none;
+  background-color: white !important;
+  height: 40px;
+  border-radius: 10px;
+}
+header div#header-wrapper div.tools {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header div#header-wrapper div.tools div#notifications {
+  padding: 5px;
+}
+header div#header-wrapper div.tools div#inbox {
+  padding: 5px;
+}
+header div#header-wrapper div.tools div#user {
+  padding: 5px;
+}
+
+header div#header-wrapper div.tools div#user img {
+  vertical-align: middle;
+}
+header div#header-wrapper div.tools div#user a#user-link {
+  color: #5a607f;
+  font-size: 14px;
+  transition: font-size 1s;
+}
+header div#header-wrapper div.tools div#user a#user-link:hover {
+  font-size: 15px;
+  transition: font-size 1s;
+}
+
+/*Main style
+*******************/
+
+main {
+  height: 1168px;
+}
+main .col {
+  float: left;
+}
+/*Main > side-menu style
+***************************/
+
+main div#side-menu {
+  width: 250px;
+}
+main div#side-menu nav div.side-wrapper {
+  box-shadow: -1px 0px 0px 0px #d7dbec inset;
+}
+main div#side-menu nav div.side-wrapper ul {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  list-style: none;
+  padding: 5px;
+}
+
+main div#side-menu nav div.side-wrapper ul li {
+  padding: 12px;
+  color: #5a607f;
+}
+main div#side-menu nav div.side-wrapper ul li:hover a {
+  padding-left: 5px;
+  transition: padding-left 1s;
+}
+
+main div#side-menu nav div.side-wrapper ul li a {
+  vertical-align: middle;
+  color: #5a607f;
+  font-size: 14px;
+  transition: padding-left 1s;
+}
+
+main div#side-menu nav div.side-wrapper ul li.active {
+  background-color: #1e5eff;
+  border-radius: 10px;
+}
+main div#side-menu nav div.side-wrapper ul li.active a {
+  color: white;
+}
+main div#side-menu nav div.side-wrapper ul li a span.menu-item {
+  margin-left: 5px;
+}
+
+main div#side-menu nav div.side-wrapper ul li a img {
+  vertical-align: middle;
+}
+main div#side-menu nav div.side-wrapper h4 {
+  font-size: 12px;
+  margin: 5px;
+  color: #a1a7c4;
+}
+
+/*Main > categories style
+***************************/
+
+main div#categories {
+  width: calc(100% - 250px);
+  height: 1168px;
+}
+main div#categories div.cat-wrapper {
+  height: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+main div#categories div.cat {
+  background-color: white;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+}
+
+main div#categories div.cat div.img-wrapper {
+  position: relative;
+  width: 350px;
+  height: 240px;
+  overflow: hidden;
+}
+main div#categories div.cat div.img-wrapper div.shadow {
+  display: none;
+  position: absolute;
+  background-color: #333752b2;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+main div#categories div.cat div.img-wrapper div.shadow a.edit {
+  position: absolute;
+  z-index: 101;
+  text-align: center;
+  font-size: 16px;
+  background-color: #f5f5fa;
+  display: inline-block;
+  width: 98px;
+  height: 40px;
+  line-height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-48px, -20px);
+  cursor: pointer;
+}
+main div#categories div.cat div.img-wrapper div.shadow img {
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+main div#categories div.cat div.cat-info {
+  padding: 20px;
+}
+main div#categories div.cat div.cat-info h5.cat-title {
+  margin: 0;
+}
+main div#categories div.cat div.cat-info span.items-count {
+  font-size: 15px;
+  color: #5a607f;
+}
+
+/*End of Styling
+******************/
